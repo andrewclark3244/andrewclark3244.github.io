@@ -15,10 +15,14 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536794942189475" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="password-protect">
+  <!-- Password Protection -->
+  <div id="password-protect" style="text-align: center; margin-top: 20%; ">
     <input type="password" id="password" placeholder="Enter Password">
     <button onclick="checkPassword()">Submit</button>
   </div>
+  <!-- End Password Protection -->
+
+  <!-- Main Content (hidden by default) -->
   <div id="content" style="display:none;">
     <!-- Your existing content -->
     <div class="navbar">
@@ -74,10 +78,11 @@
       <div style="background-position: center;width:100%; text-align: center; height:1080px; position:relative;z-index:5; z-index:1; background-image:url(https://github.com/hilfig3r/images/blob/main/betterwavetgc.png?raw=true);"></div>
     </div>
   </div>
+  <!-- JavaScript for Password Validation -->
   <script>
     function checkPassword() {
       var password = document.getElementById("password").value;
-      var correctPassword = "jiglodonian";  // Replace 'YourPassword' with your desired password
+      var correctPassword = "YourPassword";  // Replace 'YourPassword' with your desired password
       if (password === correctPassword) {
         document.getElementById("password-protect").style.display = "none";
         document.getElementById("content").style.display = "block";
@@ -86,5 +91,6 @@
       }
     }
   </script>
+  <!-- End of JavaScript -->
 </body>
 </html>

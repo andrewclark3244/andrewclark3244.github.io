@@ -14,19 +14,13 @@
   <link rel="stylesheet" href="/css/mainpage.css" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536794942189475" crossorigin="anonymous"></script>
 </head>
-	
-<!-- Google tag (gtag.js) -->
-	
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CB3H5R2GXY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CB3H5R2GXY');
-</script>
-
-  <body>
+<body>
+  <div id="password-protect">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+  <div id="content" style="display:none;">
+    <!-- Your existing content -->
     <div class="navbar">
       <div class="navitems">
         <iframe src="/iframe/navbarlogo.index.html" frameBorder="0" class="navlogo"></iframe>
@@ -39,70 +33,58 @@
         <a href="/credits"><div class="navitem">Credits</div></a>
       </div>
     </div>
-
-  <!-- Main Loader CSS -->
-         
-  <!-- Loader -->
-  
-  <!-- Main Loader CSS -->
-<a href="#" data-custom onclick=""></a>
-<link rel="stylesheet" href="/css/mainmonthcolor.css" />
-  <div class="loader">
-    <div class="loader-logo">
-    
-<!-- Month Logo -->
-	    
-<iframe src="/loader/image.index.html" frameBorder="0"></iframe>
-<!-- End of Month logo -->
-</div>
-    <div class="loader-bar"></div>
+    <!-- Main Loader CSS -->
+    <a href="#" data-custom onclick=""></a>
+    <link rel="stylesheet" href="/css/mainmonthcolor.css" />
+    <div class="loader">
+      <div class="loader-logo">
+        <iframe src="/loader/image.index.html" frameBorder="0"></iframe>
+      </div>
+      <div class="loader-bar"></div>
+    </div>
+    <div class="loaded-overlay"></div>
+    <script src="/js/loader.js"></script>
+    <center>
+      <img src="/Saintpatricksdaylogo.png" class="logo"></a>
+      <center>
+        <style>
+          #subtitle {
+            font-size: 24px;
+            color: #FFFFFF;
+            margin-top: 1px;
+            font-family: Montserrat, sans-serif;
+            text-align: center;
+          }
+        </style>
+        <center>
+          <span id="subtitle"></span>
+          <script src="/js/subtitles.js"></script>
+        </center>
+      </center>
+    </center>
+    <a href="/games" class="play-link" data-aos="fade-up">
+      <button class="play">Start Playing!</button>
+    </a>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536794942189475" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:inline-block;width:120px;height:400px" data-ad-client="ca-pub-4536794942189475" data-ad-slot="4481429587"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <div class="threearrow">
+      <div style="background-position: center;width:100%; text-align: center; height:1080px; position:relative;z-index:5; z-index:1; background-image:url(https://github.com/hilfig3r/images/blob/main/betterwavetgc.png?raw=true);"></div>
+    </div>
   </div>
-  <div class="loaded-overlay"></div>
-  <!-- JS for loader-->
-<script src="/js/loader.js"></script>
-  <!-- End Of Loader -->
-
-  <!-- Page Contents -->
-<center>
-<img src="/Saintpatricksdaylogo.png" class="logo"></a>
-<center>
-<style>
-
-#subtitle {
-  font-size: 24px;
-  color: #FFFFFF;
-  margin-top: 1px;
-  font-family: Montserrat, sans-serif;
-  text-align: center;
-}
-
-</style>
-
-<center>
-<span id="subtitle"></span>
-<script src="/js/subtitles.js"></script>
-
-
-</body>
-</html>
-
- <a href="/games" class="play-link" data-aos="fade-up"><button class="play">Start Playing!</button></a>
-	  
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536794942189475"
-     crossorigin="anonymous"></script>
-<!-- Ad -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:120px;height:400px"
-     data-ad-client="ca-pub-4536794942189475"
-     data-ad-slot="4481429587"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
- </center>
-  </center>
-<div class="threearrow">
-<div style="background-position: center;width:100%;    text-align: center; height:1080px; position:relative;z-index:5; z-index:1; background-image:url(https://github.com/hilfig3r/images/blob/main/betterwavetgc.png?raw=true);">
-</body>
-</html>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      var correctPassword = "jiglodonian";  // Replace 'YourPassword' with your desired password
+      if (password === correctPassword) {
+        document.getElementById("password-protect").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      } else {
+        alert("Incorrect Password");
+      }
+    }
+  </script>
 </body>
 </html>
